@@ -9,6 +9,7 @@ on:
   push:
     branches:
       - master
+      - save-only
     paths-ignore:
       - '**.md'
 

@@ -22,10 +22,8 @@ export function setInputs(input: CacheInput): void {
     setInput(Inputs.Key, input.key);
     input.restoreKeys &&
         setInput(Inputs.RestoreKeys, input.restoreKeys.join("\n"));
-    input.restoreOnly &&
-        setInput(Inputs.RestoreOnly, input.restoreOnly);
-    input.saveOnly &&
-        setInput(Inputs.SaveOnly, input.saveOnly);
+    input.restoreOnly && setInput(Inputs.RestoreOnly, input.restoreOnly);
+    input.saveOnly && setInput(Inputs.SaveOnly, input.saveOnly);
 }
 
 export function clearInputs(): void {
